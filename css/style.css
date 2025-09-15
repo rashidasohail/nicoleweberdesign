@@ -1,0 +1,2000 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+
+/*      NAVBAR     */
+/* Prevent horizontal scroll */
+body,
+html {
+    overflow-x: hidden;
+}
+
+.logo-toggle,
+.btn-toggle {
+    display: none;
+}
+
+
+.heading h1 {
+    font-size: 160px;
+    font-family: "Bebas Neue", Sans-serif;
+    color: #a5a4d2;
+}
+
+.first-section .cover-image {
+    height: 770px;
+    background-color: black;
+}
+
+.first-section .cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.navbar {
+    padding: 20px 10% 20px 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 600;
+    background-color: black;
+}
+
+.navbar .container .logo img {
+    width: 225px;
+}
+
+.navbar .nav {
+    width: 65%;
+    justify-content: end;
+}
+
+.navbar body {
+    padding-top: 100px;
+}
+
+.navbar .nav .nav-link {
+    color: white;
+    font-size: 17px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.navbar .nav .nav-link:hover {
+    color: #a5a4d2;
+}
+
+.navbar .nav-show-btn {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.navbar .nav-hide-btn,
+.nav-show-btn {
+    display: none;
+}
+
+.first-section .btn {
+    background-color: #a5a4d2;
+    color: white;
+    padding: 8px 18px;
+}
+
+.first-section .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.main-title {
+    position: absolute;
+    width: 45%;
+    text-align: center;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.main-title h1 {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    font-size: 71px;
+    line-height: 73px;
+}
+
+.main-title .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: white;
+}
+
+.main-title .btn {
+    margin-top: 30px;
+}
+
+.sec-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 675px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.sec-title h1 {
+    font-size: 180px;
+    font-family: "Bebas Neue", Sans-serif;
+    color: #a5a4d2;
+}
+
+
+/*     <!-- SECTION - 2 SLIDER -->   */
+
+
+.second-section {
+    overflow: hidden;
+    padding: 70px 0px 70px 0px;
+    white-space: nowrap;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.second-section .logos-slide {
+    display: inline-block;
+    animation: 15s slide infinite linear;
+}
+
+.second-section .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+}
+
+
+/* <!-- SECTION - 3 ABOUT US --> */
+
+
+.grid-first {
+    position: relative;
+    margin-top: 10px;
+}
+
+.grid-first .heading h1 {
+    margin: 0px;
+}
+
+.grid-first .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.grid-first .card-1 .about-us-img {
+    position: relative;
+    /* width: 300px; */
+    height: 600px;
+    /* margin: 50px auto; */
+    /* width: 100%; */
+    /* height: 100%; */
+    display: block;
+
+}
+
+.grid-first .card-1 .about-us-img img {
+
+    height: 699px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-first .heading {
+    position: absolute;
+    top: 50%;
+    right: 75px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    z-index: 10;
+    margin: -185px;
+}
+
+
+
+/* .grid-first .card-1 .about-us-img {
+    height: 600px;
+} 
+
+.grid-first .card-1 .about-us-img img {
+
+    height: 699px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-first .heading {
+    rotate: -90deg;
+    text-align: center;
+    position: absolute;
+    left: 42%;
+    bottom: 199px;
+    z-index: 10;
+}*/
+
+
+
+.grid-first .card {
+    border: none;
+    text-align: center;
+}
+
+
+.grid-first .card .stats .count h1 {
+    font-size: 100px;
+}
+
+.grid-first .card .stats .description span {
+    font-size: 17px;
+}
+
+.grid-first .card-2,
+.card-3,
+.card-4 {
+    padding: 20px 0px;
+}
+
+
+/*     <!-- SECTION - 4 DESCRIPTION ABOUT COMPANY  --> */
+
+.grid-second {
+    padding-top: 176px;
+    padding-bottom: 60px;
+    background-color: #f6f6fb;
+}
+
+.grid-second .container .row {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.grid-second .container .card {
+    border: none;
+    background-color: #f6f6fb;
+}
+
+.grid-second .container .card .title h1 {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 24px;
+}
+
+.grid-second .container .card .title .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+.grid-second .container .card .description {
+    margin-top: 10px;
+}
+
+.grid-second .container .card .description p {
+    size: 17px;
+}
+
+.button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid .btn {
+    background-color: black;
+    color: white;
+    padding: 8px 18px;
+}
+
+.grid .btn:hover {
+    background-color: #a5a4d2;
+}
+
+/*     <!-- SECTION - 5 SERVICES -->  */
+
+.grid-third {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.grid-third .heading h1 {
+
+    color: #e3e3f1;
+}
+
+.grid-third .sub-heading {
+    margin: -102px 0px -12px -1px;
+    padding-bottom: 40px;
+}
+
+.grid-third .sub-heading h1 {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 56px;
+
+}
+
+.grid-third .sub-heading .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+.grid-third .card {
+    height: 100% !important;
+    border: none;
+
+}
+
+.grid-third .card-1 {
+    padding: 30px;
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+.grid-third .card-2 {
+    background-color: #f5f5f5;
+}
+
+.grid-third .card-1 .logo img {
+    width: 82px;
+}
+
+.grid-third .card-1 .title {
+    padding: 24px 0px;
+}
+
+.grid-third .card-1 .title a {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 44px;
+    text-decoration: none;
+}
+
+.grid-third .card-1 .title a :hover {
+    cursor: pointer;
+    color: #a5a4d2;
+}
+
+.grid-third .container .card-1 .description p {
+    font-family: "inter", sans-serif;
+    font-size: 16px;
+}
+
+.grid-third .card-2 .logo-cover {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.grid-third .card-2 .logo-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/*     <!-- SECTION - 6 WORK AND REVIEWS -->   */
+
+.grid-fourth {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.grid-fourth .headings {
+    width: 50%;
+    display: grid;
+    justify-self: center;
+    text-align: center;
+}
+
+.grid-fourth .heading h1 {
+    color: #e3e3f1;
+    line-height: 132px;
+}
+
+.grid-fourth .sub-heading {
+    width: 73%;
+    display: flex;
+    justify-self: center;
+    margin: -197px 0px -12px -1px;
+    padding-bottom: 40px;
+}
+
+.grid-fourth .sub-heading h1 {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 56px;
+}
+
+.grid-fourth .sub-heading .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+/*  */
+.grid-fourth {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.grid-fourth .headings {
+    width: 50%;
+    display: grid;
+    justify-self: center;
+    text-align: center;
+}
+
+.grid-fourth .heading h1 {
+    color: #e3e3f1;
+    line-height: 132px;
+}
+
+.grid-fourth .sub-heading {
+    width: 73%;
+    display: flex;
+    justify-self: center;
+    margin: -197px 0px -12px -1px;
+    padding-bottom: 40px;
+}
+
+.grid-fourth .sub-heading h1 {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 56px;
+}
+
+.grid-fourth .sub-heading .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+.grid-fourth .card {
+    border: none;
+    height: 517px;
+}
+
+.grid-fourth .card .images {
+    height: 270px;
+}
+
+.grid-fourth .card .images img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.grid-fourth .card .icon {
+    display: flex;
+    align-self: center;
+    margin-top: -27px;
+}
+
+.grid-fourth .card .icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e3e3f1 !important;
+    border-radius: 10px;
+    width: 10%;
+    padding: 13px 27px;
+    font-size: 28px;
+}
+
+.grid-fourth .card .ratings {
+    margin-top: 15px;
+    color: #ffc107;
+    font-size: 20px;
+}
+
+.grid-fourth .card .description {
+    margin-top: 11px;
+}
+
+.grid-fourth .card .reviewer-name {
+    text-align: end;
+}
+
+.grid-fourth .reviews-buttons {
+    margin-top: 30px;
+}
+
+.grid-fourth .reviews-buttons .more-work-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+.grid-fourth .reviews-buttons .more-work-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.grid-fourth .card {
+    border: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.grid-fourth .card .reviewer-name {
+    text-align: end;
+    margin-top: auto;
+    font-weight: 600;
+}
+
+/*     <!-- SECTION - 7  CONTACT US  -->   */
+
+.grid-fifth {
+    background-color: #f5f5f5;
+}
+
+.grid-fifth .card {
+    background-color: #f5f5f5;
+    border: none;
+}
+
+.grid-fifth .sub-heading h1 {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 56px;
+}
+
+.grid-fifth .sub-heading .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+.grid-fifth .description p {
+    font-family: "inter", sans-serif;
+    font-size: 16px;
+}
+
+.grid-fifth .heading {
+    position: absolute;
+    top: 32%;
+    left: 85px;
+
+    transform: translateY(-50%) rotate(90deg);
+    transform-origin: left top;
+    white-space: nowrap;
+}
+
+.grid-fifth .card-1 {
+    padding: 50px 117px 50px 80px;
+}
+
+.grid-fifth .card-2 .contact-us-img {
+    height: 1072px;
+}
+
+.grid-fifth .card-2 .contact-us-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* <!-- FOOTER --> */
+
+.footer-section {
+    padding: 60px 0px 10px 0px;
+}
+
+.footer-section .container .row {
+    padding: 50px;
+}
+
+.footer-section .footer-logo {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.footer-section .container .card li {
+    padding: 10px 0px;
+    list-style-type: none;
+}
+
+.footer-section .container .card li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-section .container .card li a:hover {
+    color: #a5a4d2;
+}
+
+.footer-section .container .card-3 .description i {
+
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer-section .card {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    border: none;
+
+}
+
+.footer-section .copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+    margin-top: -24px;
+}
+
+.footer-section .background-image img {
+    width: 100%;
+}
+
+.footer-section .copyright a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-section .copyright a:hover {
+    color: #a5a4d2;
+}
+
+
+/* ----------------------------------------------------------OUR WORK - PAGE---------------------------------------------------------------- */
+
+
+.our-work .main-title {
+    width: 100%;
+    top: 310px;
+}
+
+.our-work,
+.main-title p {
+    color: white;
+}
+
+
+/* < !-- SECTION - 2 WORK SAMPLES --> */
+
+.working-samples {
+    margin-top: 70px;
+}
+
+.working-samples .card {
+    border: none;
+}
+
+.working-samples .card-img img {
+    object-fit: cover;
+}
+
+.working-samples .card-body {
+    background-color: #f5f5f5;
+}
+
+.working-samples .card-body .badge {
+    font-size: 12px;
+    margin-right: 5px;
+    color: black;
+    background-color: #a5a4d2;
+    font-weight: normal;
+}
+
+.working-samples .card-body a {
+    text-decoration: none;
+    color: black;
+}
+
+.working-samples .card-body a:hover {
+    color: #a5a4d2;
+}
+
+
+
+/* < !-- SECTION - 3 Instagram Design Showcase --> */
+.instagram-section {
+    background-color: #f5f5f5;
+    padding: 70px 0px;
+}
+
+.instagram-section .main-title {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    top: 0;
+}
+
+.instagram-section .main-title h1 {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 60px;
+    line-height: 73px;
+}
+
+.instagram-section .main-title .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+.instagram-section .insta-item {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.instagram-section .insta-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+/* ----------------------------------------------------------ABOUT US - PAGE---------------------------------------------------------------- */
+
+.our-work .cover-image img,
+.about-us .cover-image img,
+.services .cover-image img {
+
+    opacity: 0.7;
+}
+
+.about-us .main-title {
+    width: 61%;
+    top: 310px;
+}
+
+/* < !-- SECTION 2 - HISTORY --> */
+.history-section {
+    margin-top: 80px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.history-section .left-column {
+    padding: 0px 30px;
+}
+
+.history-section .left-column p {
+    font-family: "inter", sans-serif;
+    font-size: 16px;
+}
+
+.history-section .right-column {
+    display: flex;
+    justify-content: center;
+}
+
+.history-section .left-column .heading h1 {
+    color: #e3e3f1;
+}
+
+.history-section .left-column .sub-heading {
+    margin: -102px 0px -12px -1px;
+    padding-bottom: 40px;
+}
+
+.history-section .left-column .sub-heading h1,
+.meet-team .sub-heading h1,
+.process .sub-heading h1 {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 56px;
+}
+
+.history-section .left-column .sub-heading .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+.history-section .right-column .video-wrapper {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 631px;
+    overflow: hidden;
+
+
+}
+
+.history-section .right-column .video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*    < !-- SECTION 3 - MEET THE TEAM --> */
+
+.meet-team {
+    padding-bottom: 50px;
+}
+
+.meet-team .heading h1 {
+    color: #e3e3f1;
+    text-align: center;
+}
+
+.meet-team .sub-heading {
+    margin: -102px 0px -12px -1px;
+    padding-bottom: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.meet-team .sub-heading .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+
+.meet-team .card {
+    border: none;
+}
+
+.meet-team .card-img img {
+    height: 435px;
+    object-fit: cover;
+}
+
+.meet-team .card-body {
+    background-color: white;
+}
+
+.meet-team .card-body:hover {
+    background-color: #f5f5f5;
+
+}
+
+.meet-team .card-title {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+
+}
+
+.meet-team .designation {
+    font-size: 14px;
+}
+
+.meet-team .card-text {
+    margin-top: 10px;
+}
+
+.meet-team .read-more {
+    display: flex;
+    justify-content: end;
+
+}
+
+.meet-team .read-more a {
+    color: black;
+    font-family: "inter",
+        sans-serif;
+    font-size: 15px;
+}
+
+.meet-team .read-more a:hover {
+    cursor: pointer;
+}
+
+.meet-team .read-more a i {
+    margin-right: 4px;
+}
+
+/* ----------------------------------------------------------SERVICES - PAGE---------------------------------------------------------------- */
+
+.services .main-title {
+    width: 54%;
+    top: 310px;
+}
+
+/* < !-- SECTION 2 - SERVICES provided --> */
+.services-provided {
+    padding: 122px 0px;
+
+}
+
+.services-provided .card {
+    border: none;
+}
+
+.services-provided .card .card-body {
+    padding: 30px;
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+.services-provided .card .card-body .logo img {
+    width: 82px;
+}
+
+.services-provided .card .card-body .title {
+    padding: 24px 0px;
+}
+
+.services-provided .card .card-body .title a {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 44px;
+    text-decoration: none;
+}
+
+.services-provided .card .card-body .title a :hover {
+    cursor: pointer;
+    color: #a5a4d2;
+}
+
+.services-provided .card .card-body .description p {
+    font-family: "inter", sans-serif;
+    font-size: 16px;
+}
+
+.services-provided .card .card-img {
+    height: 100%;
+}
+
+.services-provided .card .card-img img {
+    height: 430px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* < !-- SECTION 3 - Logo design & branding packages --> */
+
+.packages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f5f5f5;
+}
+
+.packages .headings {
+    width: 50%;
+    display: grid;
+    justify-self: center;
+    text-align: center;
+}
+
+.packages .heading h1 {
+    color: #e3e3f1;
+    line-height: 132px;
+}
+
+.packages .sub-heading {
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    margin: -112px 0px -12px -1px;
+    padding-bottom: 40px;
+}
+
+.packages .sub-heading h1 {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 56px;
+}
+
+.packages .sub-heading .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+.packages .container .card {
+    margin-top: 30px;
+}
+
+.packages .container .card .card-body .title h1 {
+    margin-top: 20px;
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 24px;
+}
+
+.packages .container .card .card-body .title .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+.packages .container .card .card-body .description p {
+    font-family: "DM Sans", sans-serif;
+    size: 17px;
+}
+
+.packages .container .card .card-body .description ul {
+    padding: 0px;
+}
+
+.packages .container .card .card-body .description ul li {
+    list-style: none;
+
+    padding: 5px 0px;
+    display: flex;
+}
+
+.packages .container .card .card-body .description ul li span {
+    font-weight: bold;
+    font-size: 17px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.packages .container .card .card-body .description ul li i {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.packages .container .card .card-body .description ul li p {
+    margin: 0px;
+}
+
+.packages .container .card .card-body hr {
+    margin: 30px 0px;
+    border-top: 1px dotted #f5f5f5;
+    height: 0.1px;
+}
+
+.packages .container .contact-us-button {
+    margin-top: 70px;
+}
+
+/*     < !-- SECTION 4 - THE PROCESS --> */
+.process {
+    padding: 50px 0px;
+}
+
+.process .heading h1 {
+    color: #e3e3f1;
+    text-align: center;
+}
+
+.process .sub-heading {
+    margin: -111px 0px -12px -1px;
+    padding-bottom: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.process .sub-heading .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+.process .container .card {
+    border: none;
+    height: 235px;
+}
+
+.process .container .card :hover {
+    background-color: #f5f5f5;
+}
+
+.process .container .card .card-body .title h1 {
+    margin-top: 20px;
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 24px;
+}
+
+.process .container .card .card-body .title .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+.process .container .card .card-body .description p {
+    font-family: "DM Sans", sans-serif;
+    size: 17px;
+}
+
+
+.process .right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.process .right-column .video-wrapper {
+    width: 85%;
+    height: 631px;
+    overflow: hidden;
+}
+
+.process .right-column .video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* < !-- SECTION 5 - FAQs --> */
+.faqs {
+    padding: 50px 0px;
+    background-color: #f5f5f5;
+}
+
+.faqs .heading h1 {
+    text-align: center;
+    color: #e3e3f1;
+}
+
+.faqs .sub-heading {
+    margin: -111px 0px -12px -1px;
+    padding-bottom: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.faqs .sub-heading .header-italic {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: black;
+}
+
+.faqs .card {
+    border: none;
+    border-radius: 0%;
+    border-bottom: 1px solid #e3e3f1;
+    background-color: #f0f0f0;
+    /* grey default */
+}
+
+.faqs .card.open {
+    background-color: #ffffff;
+    /* white when expanded */
+}
+
+
+.faqs .card .title {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #f0f0f0; */
+    /* grey default */
+}
+
+.faqs .card .card-body .description {
+    margin-top: 15px;
+}
+
+.faqs .card .description {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.faqs .card .description a {
+    text-decoration: none;
+    color: #a5a4d2;
+}
+
+.faqs .card .title {
+    cursor: pointer;
+}
+
+.faqs .card .rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+/* -------------------------------------------------------------Media Queries ----------------------------------------------------------------*/
+/* SCREEN SIZE = 1200px */
+
+@media only screen and (max-width: 1200px) {
+    .navbar .nav {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1434px) {
+    .main-title {
+        width: 66%;
+    }
+
+    .sec-title h1 {
+        font-size: 142px;
+    }
+
+    .sec-title {
+        top: 693px;
+    }
+
+    /* .grid-first .heading {
+
+        left: 35%;
+
+    } */
+}
+
+@media only screen and (max-width: 1333px) {
+    .navbar {
+        padding: 20px 5% 20px 5%;
+    }
+
+    .navbar .nav {
+        width: 55%;
+    }
+}
+
+
+/* SCREEN SIZE = 1024px */
+
+@media only screen and (max-width: 1024px) {
+
+    .grid-third .container .card-2 .logo-cover {
+        height: 417px;
+    }
+
+    .grid-fourth .headings {
+        width: 69%;
+    }
+
+    .grid-fourth .card {
+        height: 608px;
+    }
+
+
+    .grid-fifth .card-1 {
+        padding: 50px 65px 50px 49px;
+    }
+
+    .grid-fifth .card-2 .contact-us-img {
+        height: 1162px;
+    }
+
+    .history-section .right-column .video-wrapper {
+        width: 100%;
+
+    }
+
+    .about-us .main-title {
+        width: 85%;
+        top: 310px;
+    }
+
+    .process .right-column .video-wrapper {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    /* .grid-first .heading {
+        left: 35%;
+    } */
+
+    .grid-first .card .stats .count h1 {
+        font-size: 75px;
+    }
+}
+
+/* SCREEN SIZE = 992px */
+
+@media only screen and (max-width: 992px) {
+    .navbar .nav-info .btn {
+        display: none;
+    }
+
+
+    .logo-toggle {
+        display: block;
+        padding: 22px 0px 0px 37px;
+    }
+
+    .logo-toggle img {
+        width: 245px;
+    }
+
+    .btn-toggle {
+        display: block;
+        margin-left: 37px;
+        margin-top: 20px;
+    }
+
+    .btn-toggle a {
+        font-size: 20px;
+    }
+
+    .grid-third .container .card-2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid-third .container .card-2 .logo-cover {
+        height: 200px;
+    }
+
+    .navbar .nav {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #212529d6 !important;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 3;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .grid-second .container .row {
+
+        gap: 0px;
+        justify-content: start;
+    }
+
+    .navbar .nav .nav-link {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .navbar .nav-show {
+        color: white;
+    }
+
+
+    .navbar .nav .nav-item {
+        padding-left: 22px;
+    }
+
+    .navbar .nav-hide {
+        width: 50px;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 30px;
+        margin: -48px 38px 50px auto;
+    }
+
+    .navbar .nav-show-btn,
+    .navbar .nav-hide-btn {
+        display: block;
+    }
+
+}
+
+
+@media only screen and (max-width: 978px) {
+    .main-title h1 {
+
+        font-size: 55px;
+    }
+
+    .sec-title h1 {
+        font-size: 104px;
+    }
+
+    .sec-title {
+        top: 709px;
+    }
+
+}
+
+/* SCREEN SIZE = 768px */
+
+@media only screen and (max-width: 768px) {
+
+    .heading h1 {
+        font-size: 149px;
+        line-height: 124px;
+    }
+
+    .grid-first .card-1 .about-us-img img {
+        height: 100%;
+    }
+
+    .grid-first .heading {
+
+        top: 46%;
+        right: 25%;
+
+    }
+
+    /* .grid-first .heading {
+        left: 30%;
+    } */
+
+
+    .grid-second {
+        padding-top: 60px;
+    }
+
+    .grid-fourth .sub-heading {
+        margin: -210px 0px -12px -1px;
+    }
+
+    .grid-fourth .sub-heading h1 {
+        font-size: 52px;
+    }
+
+    .grid-fourth .container .row .card .description p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .grid-fourth .card .reviewer-name {
+
+        margin-top: 0;
+    }
+
+    .grid-fourth .container .row .card .reviewer-name h6 {
+        font-size: 14px;
+    }
+
+    .grid-fourth .card {
+        height: 645px;
+    }
+
+    .grid-fifth .card-2 .contact-us-img {
+        height: 1325px;
+    }
+
+    .grid-fifth .heading {
+        position: absolute;
+        top: 32%;
+        left: 54px;
+        transform: translateY(-50%) rotate(90deg);
+        transform-origin: left top;
+        white-space: nowrap;
+    }
+
+    .grid-fifth .sub-heading h1 {
+
+        font-size: 44px;
+    }
+
+    .instagram-section .main-title h1 {
+        font-size: 42px;
+        line-height: 53px;
+    }
+
+    .history-section .left-column {
+        padding: 0px 0px;
+    }
+
+    .history-section .right-column .video-wrapper {
+
+        height: 572px;
+    }
+
+    .history-section .left-column .sub-heading h1,
+    .meet-team .sub-heading h1,
+    .process .sub-heading h1,
+    .faqs .sub-heading h1,
+    .packages .sub-heading h1 {
+
+        font-size: 47px;
+    }
+
+    .history-section .left-column .sub-heading,
+    .meet-team .sub-heading,
+    .packages .sub-heading,
+    .process .sub-heading,
+    .faqs .sub-heading {
+        margin: -70px 0px -12px -1px;
+    }
+
+    .services-provided .card-img {
+        height: 100%;
+    }
+
+    .packages .headings {
+        width: 62%;
+    }
+
+
+
+    .footer-section .copyright {
+
+        padding: 0px 2%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .grid-first .card-1 .about-us-img {
+        width: 93%;
+    }
+
+    .grid-first .heading {
+
+        top: 46%;
+        right: 125px;
+
+    }
+
+    .grid-fifth .card-2 .contact-us-img {
+        width: 93%;
+    }
+
+    .grid-fifth .heading {
+
+        left: 110px;
+    }
+}
+
+@media only screen and (max-width: 764px) {
+    .grid-third .container .card-2 .logo-cover {
+        height: 420px;
+    }
+
+}
+
+@media only screen and (max-width: 757px) {
+    .main-title h1 {
+        font-size: 50px;
+    }
+
+    .sec-title h1 {
+        font-size: 94px;
+    }
+
+    .sec-title {
+        top: 720px;
+    }
+}
+
+
+
+@media only screen and (max-width: 689px) {
+    .main-title h1 {
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .sec-title h1 {
+        font-size: 84px;
+        line-height: 80px;
+    }
+
+    .sec-title {
+        top: 735px;
+    }
+
+
+}
+
+@media only screen and (max-width: 430px) {
+
+    .main-title h1 {
+        font-size: 29px;
+        line-height: 40px;
+    }
+
+    .sec-title h1 {
+        font-size: 55px;
+    }
+
+    .sec-title {
+        top: 741px;
+    }
+
+    .second-section .container .slider-imgs img {
+        width: 60px;
+    }
+
+    .grid-first .card-1 .about-us-img {
+        height: 578px;
+        /* width: 400px; */
+        width: 94%;
+    }
+
+    .heading h1 {
+        font-size: 73px;
+    }
+
+    .grid-first .heading {
+        right: 30%;
+        top: 346px;
+    }
+
+    /* 
+    .grid-first .card-1 .about-us-img img {
+        height: 97%;
+
+    } */
+
+
+    /* .grid-first .heading {
+        right: -61%;
+        bottom: 750px;
+    } */
+
+
+    .grid-first .card .stats .count h1 {
+        font-size: 75px;
+    }
+
+    .grid-second .container .row {
+
+        text-align: center;
+    }
+
+    .grid-third .sub-heading h1 {
+
+        font-size: 40px;
+    }
+
+    .grid-third .sub-heading {
+        margin: -65px 0px -12px -1px;
+    }
+
+
+    .grid-third .card-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .grid-third .container .card-2 .logo-cover {
+        height: 290px;
+    }
+
+
+
+    .grid-fourth .heading h1 {
+        line-height: 69px;
+    }
+
+    .grid-fourth .headings {
+        width: 100%;
+    }
+
+    .grid-fourth .sub-heading h1 {
+        font-size: 40px;
+    }
+
+    .grid-fourth .sub-heading {
+        margin: -126px 0px -12px -1px;
+    }
+
+    .grid-fifth .sub-heading h1 {
+
+        font-size: 35px;
+    }
+
+    .grid-fourth .card {
+        height: fit-content;
+    }
+
+    .grid-fourth .reviews-buttons {
+        display: grid;
+        gap: 10px;
+    }
+
+    .grid-fourth .reviews-buttons .more-work-btn {
+
+        margin-left: 0px;
+
+    }
+
+    .grid-fifth .heading {
+        left: 86px;
+    }
+
+    .grid-fifth .card-2 .contact-us-img {
+        height: 560px;
+    }
+
+    .footer-section .card {
+
+        justify-self: flex-start;
+
+    }
+
+    .footer-section .container .row {
+        padding: 50px 3px;
+    }
+
+
+
+    .footer-section .copyright {
+        display: block;
+        padding: 0px;
+        margin-top: -24px;
+        text-align: center;
+        font-size: 14px;
+
+    }
+
+    .grid-fifth .card-2 .contact-us-img {
+        height: 592px;
+    }
+
+    .sec-title h1 {
+        font-size: 69px;
+        line-height: 57px;
+    }
+
+    .instagram-section .main-title {
+
+        width: 97%;
+    }
+
+    .instagram-section .main-title h1 {
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    .our-work .main-title {
+        width: 95%;
+    }
+
+    .history-section .left-column {
+        padding: 0px 20px;
+        text-align: center;
+    }
+
+    .meet-team .sub-heading {
+        margin: -74px 0px -12px -1px;
+    }
+
+    .history-section .left-column .sub-heading {
+        margin: -72px 0px -12px -1px;
+        padding-bottom: 0;
+    }
+
+    .history-section .left-column p {
+        text-align: justify;
+    }
+
+    .history-section .left-column .sub-heading h1,
+    .meet-team .sub-heading h1 {
+        font-family: "DM Sans", sans-serif;
+        color: black;
+        font-size: 46px;
+    }
+
+    .packages .heading h1,
+    .process .heading h1,
+    .faqs .heading h1 {
+        font-size: 82px;
+        line-height: 79px;
+    }
+
+    .packages .sub-heading h1,
+    .process .sub-heading h1,
+    .faqs .sub-heading h1,
+    .meet-team .sub-heading h1,
+    .history-section .sub-heading h1 {
+        font-size: 34px;
+    }
+
+    .packages .sub-heading,
+    .process .sub-heading,
+    .faqs .sub-heading {
+
+        margin: -56px 0px -12px -1px;
+    }
+
+
+
+
+    .packages .headings {
+        width: 86%;
+    }
+
+    .services .main-title {
+        width: 83%;
+    }
+
+    .services-provided .card .card-body {
+        text-align: center;
+    }
+
+    .services-provided .card .card-body .description {
+        text-align: justify;
+    }
+
+    .packages .card-body .card-top {
+        text-align: center;
+    }
+
+    .process .container .card {
+        text-align: center;
+    }
+
+    .history-section {
+        margin-top: 15px;
+    }
+
+    .working-samples .card-body {
+        text-align: center;
+    }
+
+    .second-section .container .row .col-4 {
+        margin-top: 20px;
+        padding: 0px;
+
+    }
+
+    .navbar .nav-hide {
+
+        margin: -48px 19px 50px auto;
+    }
+
+    .logo-toggle img {
+        width: 223px;
+    }
+}
+
+/* SCREEN SIZE = 375px */
+
+@media only screen and (max-width: 376px) {
+    .grid-first .card .stats .count h1 {
+        font-size: 54px;
+    }
+
+    .grid-fifth .image-side {
+
+        width: 293px;
+    }
+
+    .main-title h1 {
+        font-size: 45px;
+        line-height: 47px;
+    }
+
+    .grid-fourth .sub-heading {
+        width: 100%;
+    }
+
+    .grid-first .heading {
+        right: 35%;
+    }
+
+    /* .grid-first .card-1 .about-us-img {
+
+        width: 345px;
+    } */
+
+    /* .grid-first .heading {
+        right: -58%;
+        bottom: 660px;
+    } */
+
+    .grid-fifth .card-1 {
+        padding: 50px 15px 50px 15px;
+    }
+
+    .grid-fifth .card-2 .contact-us-img {
+        height: 517px;
+    }
+
+    .instagram-section .main-title h1 {
+        font-size: 32px;
+    }
+
+    .main-title h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .history-section .left-column .sub-heading h1 {
+
+        font-size: 41px;
+    }
+
+    .history-section .left-column .sub-heading {
+        margin: -68px 0px -12px -1px;
+        padding-bottom: 0px;
+    }
+
+    .faqs .sub-heading {
+        margin: -64px 0px -12px -1px;
+    }
+
+    .about-us .main-title {
+        top: 243px;
+    }
+
+    .logo-toggle img {
+        width: 217px;
+    }
+}
+
+
+/* SCREEN SIZE = 320px */
+
+@media only screen and (max-width: 320px) {
+    .grid-fifth .image-side {
+        width: 238px;
+    }
+
+    /* .grid-first .card-1 .about-us-img {
+        height: 516px;
+        width: 299px;
+    } */
+    .grid-first .heading {
+        right: 40%;
+    }
+
+    .heading h1 {
+        font-size: 54px;
+    }
+
+    .sec-title {
+        top: 744px;
+    }
+
+    /* .grid-first .card-1 .about-us-img img {
+        height: 92%;
+    }
+        
+
+    .grid-first .heading {
+        bottom: 650px;
+    }
+
+    .heading h1 {
+        font-size: 75px;
+    } */
+
+    .navbar .container .logo img {
+        width: 204px;
+    }
+
+
+    .grid-fifth .card-2 .contact-us-img {
+        height: 439px;
+    }
+
+    .grid-fifth .heading {
+        left: 81px;
+    }
+
+    .meet-team .heading h1 {
+        line-height: 74px;
+    }
+
+    .instagram-section .main-title h1 {
+
+        line-height: 34px;
+    }
+
+    .meet-team .sub-heading {
+        margin: -57px 0px -12px -1px;
+    }
+
+    .logo-toggle img {
+        width: 194px;
+    }
+
+}
